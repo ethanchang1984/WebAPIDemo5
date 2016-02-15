@@ -6,7 +6,7 @@
 
     function datacontext(common, entityManagerFactory) {
         var $q = common.$q;
-        var manager = entityManagerFactory.createManager();
+        var manager = entityManagerFactory.newManager();
 
         var getLogFn = common.logger.getLogFn;
         var log = getLogFn(serviceId);
